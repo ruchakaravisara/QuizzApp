@@ -1,17 +1,18 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import React from "react";
+import tw from "twrnc";
 
-const Splash = ({navigation}) => {
+const Splash = ({ navigation }) => {
   return (
-    <View>
-      <Text>Splash</Text>
-      <Pressable onPress={()=>navigation.navigate("Question")}>
-        <Text>Go To Questions</Text>
-      </Pressable>
+    <View style={tw`flex-1`}>
+      <Image
+        source={require("../../assets/questening.png")}
+        style={tw.style(tw`h-2.7/5`, { aspectRatio: 1 })}
+      />
     </View>
-  )
-}
+  );
+};
 
-export default Splash
+export default Splash;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
