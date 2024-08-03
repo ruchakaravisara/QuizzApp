@@ -65,7 +65,7 @@ const Questions = ({ navigation }) => {
       <Pressable
         style={tw`bg-green-500 p-4 rounded-md mt-6`}
         onPress={handleNext}
-        disabled={!selectedOption} // Disable "Next" button until an option is selected
+        disabled={!selectedOption} // Disable "Next" button until an option is  selected
       >
         <Text style={tw`text-white text-lg text-center font-bold`}>
           {currentQuestionIndex === reactQuestions.length - 1 ? "Finish" : "Next"}
