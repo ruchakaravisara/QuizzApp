@@ -18,7 +18,7 @@ const Score = ({ navigation }) => {
       </Text>
 
       <Pressable
-        style={tw`bg-purple-500 p-4 rounded-md mt-6`}
+        style={tw`bg-green-500 p-4 rounded-md mt-6`}
         onPress={() => navigation.navigate("Splash")}
       >
         <Text style={tw`text-white font-medium text-lg`}>Play Again</Text>

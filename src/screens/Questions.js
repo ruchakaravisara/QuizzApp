@@ -63,7 +63,7 @@ const Questions = ({ navigation }) => {
         </Pressable>
       ))}
       <Pressable
-        style={tw`bg-purple-500 p-4 rounded-md mt-6`}
+        style={tw`bg-green-500 p-4 rounded-md mt-6`}
         onPress={handleNext}
         disabled={!selectedOption} // Disable "Next" button until an option is selected
       >
